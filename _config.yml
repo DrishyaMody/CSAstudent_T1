@@ -1,9 +1,9 @@
 title: Nighthawk Pages 
 description: "Class of 2025"
-owner_name: John Mortensen
+owner_name: Drishya Mody
 github_username: nighthawkcoders
-github_repo: "student_2025" 
-baseurl: "/student_2025"
+github_repo: "CSAstudent_T1" 
+baseurl: "/CSAstudent_T1"
 future: true
 remote_theme: jekyll/minima
 minima:
