@@ -25,15 +25,20 @@ permalink: /cookies
     </style>
 </head>
 <body>
-    <img id="cookie" src="/CSAstudent_T1/images/cookie.png" alt="cookie"> // referral to my images file with the cookie image
+    <img id="cookie" src="/CSAstudent_T1/images/cookie.png" alt="cookie"> 
+    <!-- referral to my images file with the cookie image -->
     <p>Score: <span id="score">0</span></p> 
     <div class="shop">
         <h2>SHOP</h2>
-        <p>Worker: 100 cookies</p> // price of worker
-        <button id="buyWorker">Buy Worker</button> // button for worker purchase
-        <p>Each worker adds 1 cookie per click</p> // worker legend
+        <p>Worker: 100 cookies</p> 
+        <!-- // price of worker -->
+        <button id="buyWorker">Buy Worker</button> 
+        <!-- // button for worker purchase -->
+        <p>Each worker adds 1 cookie per click</p> 
+        <!-- // worker legend -->
     </div>
-    <audio id="clickSound" src="/CSAstudent_T1/click.mp3"></audio> //referring to mp3 file to create clicking noise when cookie is clicked
+    <audio id="clickSound" src="/CSAstudent_T1/click.mp3"></audio> 
+    <!-- //referring to mp3 file to create clicking noise when cookie is clicked -->
     <script>
         let score = 0; // defining score 
         let cookiesPerClick = 1; // per click one cookie gained in the beginning
