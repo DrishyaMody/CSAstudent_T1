@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Cookie Clicker
-courses: {'csa': {'week': 1}}
-type: ccc
+# courses: {'csa': {'week': 1}}
+# type: ccc
 comments: True
 permalink: /cookies
 ---
