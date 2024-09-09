@@ -222,7 +222,6 @@ As an Extrovert I am...
       <li>Learned to coach children under 7</li>
       <li>Learned the operational aspect of Soccer Shots </li>
       <li>Developed teamwork and leadership skills</li>
-      <li>OTHER ACTIVITIES OVER 2021 SUMMER</li>
     </ul>
   </div>
 </div>
