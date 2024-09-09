@@ -5,7 +5,9 @@ courses: {'csa': {'week': 1}}
 type: ccc
 comments: True
 ---
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +32,7 @@ comments: True
         }
     </style>
 </head>
+
 <body>
 
     <!-- Submenu navigation -->
@@ -44,5 +47,15 @@ comments: True
     <h1>Welcome to the Fitness Submenu!</h1>
     <p>Select an option above to start.</p>
 
+    <!-- Utteranc.es comment section -->
+    <script src="https://utteranc.es/client.js"
+        repo="DrishyaMody/CSAstudent_T1"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
+
 </body>
+
 </html>

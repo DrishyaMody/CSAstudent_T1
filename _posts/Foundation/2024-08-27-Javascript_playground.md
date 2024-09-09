@@ -24,6 +24,14 @@ comments: True
   }
 </style>
 
+<script src="https://utteranc.es/client.js"
+        repo="DrishyaMody/CSAstudent_T1"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
 <div class="submenu">
   <a href="https://drishyamody.github.io/CSAstudent_T1/cookies">Cookie Clicker</a>
   <a href="/CSAstudent_T1/calculator">Calculator</a>
