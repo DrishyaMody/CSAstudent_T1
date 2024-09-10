@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-utterances: true
+comments: true
 ---
 
 <style>
@@ -239,4 +239,5 @@ As an Extrovert I am...
   function closeModal(modalId) {
     document.getElementById(modalId).style.display = "none"; // Hide the modal
   }
+  
 </script>

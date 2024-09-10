@@ -41,6 +41,8 @@ comments: True
         <a href="/CSAstudent_T1/exerciseRecommender">Exercise Recommender</a>
         <a href="/CSAstudent_T1/bmiCalculator">BMI Calculator</a>
         <a href="/CSAstudent_T1/idealMacros">Ideal Macros</a>
+        <a href="/CSAstudent_T1/Hacks">Hacks</a>
+
     </div>
 
     <!-- Example content for the main page -->
