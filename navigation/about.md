@@ -129,7 +129,6 @@ As an Extrovert I am...
 
 <img src="/CSAstudent_T1/images/csacollage.png" alt="My Interests" height="500" width="400">
 
-
 <div class="timeline">
   <!-- Timeline item for 2024 -->
   <div class="container" onclick="openModal('modal2024')">
@@ -154,9 +153,6 @@ As an Extrovert I am...
     <h2>2021</h2>
     <img src="/CSAstudent_T1/images/soccerShots.png" alt="Soccer Shots Volunteerd">
   </div>
-
-
-  
 </div>
 
 <!-- Modal for 2024 -->
@@ -227,17 +223,72 @@ As an Extrovert I am...
   </div>
 </div>
 
-[LinkedIn](https://www.linkedin.com/in/drishya-mody-20317b235/)
+<!-- Trivia Section -->
+<div id="trivia-section" style="text-align: center; padding: 30px 0;">
+  <h2>Test Your Knowledge: Drishya Trivia!</h2>
+  <p>How well do you know me? Answer these questions to find out!</p>
+
+  <!-- Question 1 -->
+  <div class="trivia-question">
+    <h3>1. How long have I been playing soccer?</h3>
+    <button onclick="checkAnswer(1, 'correct')">14 years</button>
+    <button onclick="checkAnswer(1, 'wrong')">10 years</button>
+    <button onclick="checkAnswer(1, 'wrong')">5 years</button>
+    <p id="answer1"></p>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="trivia-question">
+    <h3>2. What was my entrepreneurship project in 2022 focused on?</h3>
+    <button onclick="checkAnswer(2, 'correct')">Road safety</button>
+    <button onclick="checkAnswer(2, 'wrong')">Environmental conservation</button>
+    <button onclick="checkAnswer(2, 'wrong')">Food delivery</button>
+    <p id="answer2"></p>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="trivia-question">
+    <h3>3. Where did I complete an Internship at over the Summer 2024?</h3>
+    <button onclick="checkAnswer(3, 'wrong')">SoccerShots</button>
+    <button onclick="checkAnswer(3, 'correct')">Ernst & Young</button>
+    <button onclick="checkAnswer(3, 'wrong')">Baskin Robbins</button>
+    <p id="answer3"></p>
+  </div>
+
+  <div style="margin-top: 20px;">
+    <p id="final-message"></p>
+  </div>
+</div>
 
 <script>
+  let correctAnswers = 0;
+
+  function checkAnswer(question, result) {
+    let answerText = document.getElementById('answer' + question);
+    if (result === 'correct') {
+      answerText.innerHTML = "Correct!";
+      answerText.style.color = "green";
+      correctAnswers++;
+    } else {
+      answerText.innerHTML = "Oops! Try again.";
+      answerText.style.color = "red";
+    }
+    checkCompletion();
+  }
+
+  function checkCompletion() {
+    if (correctAnswers === 3) {
+      document.getElementById('final-message').innerHTML = "You're a Drishya expert!";
+    }
+  }
+
   // Function to open a modal
   function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block"; // Show the modal
+    document.getElementById(modalId).style.display = "block";
   }
 
   // Function to close a modal
   function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none"; // Hide the modal
+    document.getElementById(modalId).style.display = "none";
   }
-  
 </script>
