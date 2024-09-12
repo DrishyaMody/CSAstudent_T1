@@ -118,16 +118,8 @@ comments: true
   }
 </style>
 
-As an Extrovert I am...
-
-- an aspiring senior at Del Norte High School 
-- desire to major in Data Science 
-- Experience as a leader in entrepreneurship, CS projects 
-- A pretty friendly guy, am a people person, love hanging out with people in free time
-- Been playing soccer for 14 years
 
 
-<img src="/CSAstudent_T1/images/csacollage.png" alt="My Interests" height="500" width="400">
 
 <div class="timeline">
   <!-- Timeline item for 2024 -->
@@ -292,3 +284,14 @@ As an Extrovert I am...
     document.getElementById(modalId).style.display = "none";
   }
 </script>
+
+As an Extrovert I am...
+
+- an aspiring senior at Del Norte High School 
+- desire to major in Data Science 
+- Experience as a leader in entrepreneurship, CS projects 
+- A pretty friendly guy, am a people person, love hanging out with people in free time
+- Been playing soccer for 14 years
+
+
+<img src="/CSAstudent_T1/images/csacollage.png" alt="My Interests" height="500" width="400">
