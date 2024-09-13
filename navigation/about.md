@@ -215,6 +215,14 @@ comments: true
   </div>
 </div>
 
+As an Extrovert I am...
+
+- an aspiring senior at Del Norte High School 
+- desire to major in Data Science 
+- Experience as a leader in entrepreneurship, CS projects 
+- A pretty friendly guy, am a people person, love hanging out with people in free time
+- Been playing soccer for 14 years
+
 <!-- Trivia Section -->
 <div id="trivia-section" style="text-align: center; padding: 30px 0;">
   <h2>Test Your Knowledge: Drishya Trivia!</h2>
@@ -285,13 +293,6 @@ comments: true
   }
 </script>
 
-As an Extrovert I am...
-
-- an aspiring senior at Del Norte High School 
-- desire to major in Data Science 
-- Experience as a leader in entrepreneurship, CS projects 
-- A pretty friendly guy, am a people person, love hanging out with people in free time
-- Been playing soccer for 14 years
 
 
-<img src="/CSAstudent_T1/images/csacollage.png" alt="My Interests" height="500" width="400">
+
