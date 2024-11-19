@@ -365,6 +365,16 @@ permalink: /understanding
         </div>
     </div>
 
+    <!-- Utterances script -->
+    <script src="https://utteranc.es/client.js"
+            repo="DrishyaMody/CSAstudent_T1"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+
+    <!-- Custom modal script -->
     <script>
         function openModal(modalId) {
             document.getElementById(modalId).style.display = "block";
@@ -384,6 +394,7 @@ permalink: /understanding
             }
         }
     </script>
+
 </body>
 </html>
 
