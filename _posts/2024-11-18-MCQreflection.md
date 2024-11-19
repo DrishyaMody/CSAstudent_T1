@@ -5,6 +5,16 @@ courses: {'csa': {'week': 13}}
 comments: True
 type: collab
 ---
+## UNITS I MISSED OUT ON
+- String Methods (67%) 2.7
+- Equivalent Boolean Expressions (50%) 3.6
+- Accessor Methods (50%) 5.4
+
+2.7 practice questions: 12,23,30
+
+3.6 practice questions: 19,38
+
+5.4 practice questions: 3,25 
 
 ## Question 4
 I got this question wrong because I misunderstood how the `if` condition and integer division work in Java. Since `y = 3`, the condition `(y < 0)` is false, so the `else` block executes. I also incorrectly thought `x / y` would include decimals, but Java performs integer division, which truncates decimals, resulting in `2`.
