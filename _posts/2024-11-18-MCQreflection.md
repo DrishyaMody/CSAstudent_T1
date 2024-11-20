@@ -16,6 +16,8 @@ type: collab
 
 5.4 practice questions: 3,25 
 
+[https://library.fiveable.me/ap-comp-sci-a](Resource for Content solidification)
+
 ## Question 4
 I got this question wrong because I misunderstood how the `if` condition and integer division work in Java. Since `y = 3`, the condition `(y < 0)` is false, so the `else` block executes. I also incorrectly thought `x / y` would include decimals, but Java performs integer division, which truncates decimals, resulting in `2`.
 
