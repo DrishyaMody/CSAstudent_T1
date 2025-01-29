@@ -214,7 +214,7 @@ comments: true
     </ul>
   </div>
 </div>
-
+ 
 As an Extrovert I am...
 
 - an aspiring senior at Del Norte High School 
