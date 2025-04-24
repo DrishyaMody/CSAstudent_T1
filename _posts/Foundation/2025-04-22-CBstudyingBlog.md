@@ -3,6 +3,7 @@ layout: post
 title: CB documentation
 comments: True
 permalink: /CBstudying
+menu: nav/tri3.html
 ---
 
 <html lang="en">
