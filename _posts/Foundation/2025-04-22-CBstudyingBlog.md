@@ -77,63 +77,95 @@ permalink: /CBstudying
 
 <script>
   const frqs = [
-    {
-      title: 'Methods and Control Structures',
-      skills: [
-        'Writing methods using loops and conditionals',
-        'Using parameters and return values',
-        'Understanding control flow'
-      ],
-      challenges: [
-        'Forgetting return statements',
-        'Loop logic errors',
-        'Not handling edge cases'
-      ],
-      tip: 'Practice writing small utility methods like checking if a number is prime or summing an array.'
-    },
-    {
-      title: 'Class Design',
-      skills: [
-        'Creating instance variables and constructors',
-        'Writing accessors and mutators',
-        'Implementing object behavior with methods'
-      ],
-      challenges: [
-        'Mixing up local and instance variables',
-        'Improper use of “this” keyword',
-        'Forgetting visibility modifiers'
-      ],
-      tip: 'Design simple classes like Book or Student and write methods that manipulate their state.'
-    },
-    {
-      title: 'Array / ArrayList',
-      skills: [
-        'Traversing and modifying arrays and ArrayLists',
-        'Using built-in methods for ArrayList',
-        'Avoiding off-by-one errors'
-      ],
-      challenges: [
-        'Mutating a list while looping through it',
-        'Accessing invalid indices',
-        'Mixing up array vs. list methods'
-      ],
-      tip: 'Practice removing elements, reversing lists, or finding specific values in arrays.'
-    },
-    {
-      title: '2D Arrays',
-      skills: [
-        'Navigating 2D arrays using nested loops',
-        'Reading and writing to rows and columns',
-        'Summing or transforming data in grids'
-      ],
-      challenges: [
-        'Confusing row vs. column indexes',
-        'Hardcoding sizes instead of using .length',
-        'Loop nesting mistakes'
-      ],
-      tip: 'Start with visual problems like summing rows or diagonals in a grid.'
-    }
-  ];
+  {
+    title: 'Methods and Control Structures',
+    skills: [
+      'Writing methods using loops and conditionals',
+      'Using parameters and return values',
+      'Understanding control flow'
+    ],
+    challenges: [
+      'Forgetting return statements',
+      'Loop logic errors',
+      'Not handling edge cases'
+    ],
+    tip: 'Practice writing small utility methods like checking if a number is prime or summing an array.',
+    notebookLink: '/CSAstudent_T1/ap-csa-frq-solutions',
+    examples: ['WordScrambler.recombine', 'TempGrid.computeTemp'],
+    simple: 'Write a method that takes inputs and uses logic (like if, loops) to calculate and return something.',
+    study: [
+      'Rewrite methods from FRQs by hand',
+      'Create your own method that filters data or does math',
+      'Use AP Classroom practice: Unit 3 + 4'
+    ]
+  },
+  {
+    title: 'Class Design',
+    skills: [
+      'Creating instance variables and constructors',
+      'Writing accessors and mutators',
+      'Implementing object behavior with methods'
+    ],
+    challenges: [
+      'Mixing up local and instance variables',
+      'Improper use of “this” keyword',
+      'Forgetting visibility modifiers'
+    ],
+    tip: 'Design simple classes like Book or Student and write methods that manipulate their state.',
+    notebookLink: '/CSAstudent_T1/ap-csa-frq-solutions',
+    examples: ['ScoreInfo / Stats.record'],
+    simple: 'You define a class that stores info (like score and frequency), and add behavior (methods).',
+    study: [
+      'Make a class for a real thing (Book, Game, Animal)',
+      'Practice writing toString() and constructor',
+      'Check Unit 5 from AP Classroom'
+    ]
+  },
+  {
+    title: 'Array / ArrayList',
+    skills: [
+      'Traversing and modifying arrays and ArrayLists',
+      'Using built-in methods for ArrayList',
+      'Avoiding off-by-one errors'
+    ],
+    challenges: [
+      'Mutating a list while looping through it',
+      'Accessing invalid indices',
+      'Mixing up array vs. list methods'
+    ],
+    tip: 'Practice removing elements, reversing lists, or finding specific values in arrays.',
+    notebookLink: '/CSAstudent_T1/ap-csa-frq-solutions',
+    examples: ['recordScores()', 'getPeakIndex()'],
+    simple: 'You go through a list or array to find things, change them, or calculate stuff.',
+    study: [
+      'Write loops that filter or count elements',
+      'Practice swapping and removing in ArrayLists',
+      'Do Unit 6 + 7 from CollegeBoard progress checks'
+    ]
+  },
+  {
+    title: '2D Arrays',
+    skills: [
+      'Navigating 2D arrays using nested loops',
+      'Reading and writing to rows and columns',
+      'Summing or transforming data in grids'
+    ],
+    challenges: [
+      'Confusing row vs. column indexes',
+      'Hardcoding sizes instead of using .length',
+      'Loop nesting mistakes'
+    ],
+    tip: 'Start with visual problems like summing rows or diagonals in a grid.',
+    notebookLink: '/CSAstudent_T1/ap-csa-frq-solutions',
+    examples: ['TempGrid.computeTemp()', 'updateAllTemps()'],
+    simple: 'You work with a table of numbers and calculate new values based on neighbors.',
+    study: [
+      'Visualize 2D arrays like spreadsheets',
+      'Draw rows and columns on paper and write indices',
+      'Try nested loop challenges with 2D array grids'
+    ]
+  }
+];
 
   const frqsContainer = document.getElementById('frqs-container');
 
@@ -148,17 +180,29 @@ permalink: /CBstudying
   });
 
   function openFrqModal(index) {
-    const modal = document.getElementById('modal');
-    const body = document.getElementById('modal-body');
-    const frq = frqs[index];
-    body.innerHTML = `
-      <h3>${frq.title}</h3>
-      <p><strong>What it tests:</strong></p>
-      <ul>${frq.skills.map(skill => `<li>${skill}</li>`).join('')}</ul>
-      <p><strong>Common challenges:</strong></p>
-      <ul>${frq.challenges.map(ch => `<li>${ch}</li>`).join('')}</ul>
-      <p><strong>Study tip:</strong> ${frq.tip}</p>
-    `;
-    modal.style.display = 'block';
-  }
+  const modal = document.getElementById('modal');
+  const body = document.getElementById('modal-body');
+  const frq = frqs[index];
+
+  body.innerHTML = `
+    <h3>${frq.title}</h3>
+    <p><strong>📌 What it tests:</strong></p>
+    <ul>${frq.skills.map(skill => `<li>${skill}</li>`).join('')}</ul>
+
+    <p><strong>🧠 Simple Summary:</strong><br>${frq.simple}</p>
+
+    <p><strong>📚 Example Questions:</strong><br>${frq.examples.join(', ')}</p>
+
+    <p><strong>⚠️ Common Challenges:</strong></p>
+    <ul>${frq.challenges.map(ch => `<li>${ch}</li>`).join('')}</ul>
+
+    <p><strong>📝 Study Tips:</strong></p>
+    <ul>${frq.study.map(tip => `<li>${tip}</li>`).join('')}</ul>
+
+    <p><a href="${frq.notebookLink}" target="_blank" style="font-weight: bold; color: #007bff;">🔗 View Code Notebook</a></p>
+  `;
+
+  modal.style.display = 'block';
+}
+
 </script>
